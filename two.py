@@ -16,9 +16,7 @@ def main():
     # Anzahl der Vokale ermitteln
     anzahl = zaehle_vokale(eingabe)
 
-    print("Anzahl der Vokale im Text: " + str(anzahl))  # BUG 1: Typfehler – String + int
-
-    # BUG 2 (optional): Großbuchstaben werden nicht als Vokale erkannt
+    print("Anzahl der Vokale im Text: " + str(anzahl))
 
 if __name__ == "__main__":
     main()

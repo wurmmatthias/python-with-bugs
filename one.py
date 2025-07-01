@@ -15,13 +15,13 @@ def main():
     
     # Umwandlung der Eingabe in eine Liste von Ganzzahlen
     zahlen = eingabe.split(",")
-    zahlen = [int(z.strip()) for z in zahlen]  # BUG 1: int statt float – bei Dezimalzahlen Fehler
+    zahlen = [int(z.strip()) for z in zahlen]
 
     # Durchschnitt berechnen
     durchschnitt = berechne_durchschnitt(zahlen)
 
     # Ergebnis ausgeben
-    print("Der Durchschnitt der Zahlen ist: " + durchschnitt)  # BUG 2: Typfehler – String + Float
+    print("Der Durchschnitt der Zahlen ist: " + durchschnitt)
 
 if __name__ == "__main__":
     main()
