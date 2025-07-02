@@ -2,9 +2,12 @@
 
 def zaehle_vokale(text):
     """Zählt die Anzahl der Vokale im gegebenen Text"""
-    vokale = ['a', 'e', 'i', 'o', 'u']
+    vokale = ['a', 'e', 'i', 'o', 'u'] # hier ist nur die kleine Schreibweise vorhanden
     zaehler = 0
-    for buchstabe in text:
+
+    t = text.lower() # Entweder alles auf lower setzten oder das Array erweitern
+
+    for buchstabe in t:
         if buchstabe in vokale:
             zaehler += 1
     return zaehler
